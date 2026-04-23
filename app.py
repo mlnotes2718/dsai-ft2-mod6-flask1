@@ -14,7 +14,7 @@ import datetime
 #    load_dotenv()
 
 # for AWS, do not run this because not using .env
-#os.environ["GROQ_API_KEY"] = ""
+os.environ["GROQ_API_KEY"] = ""
 #os.environ["GROQ_API_KEY"] = os.environ.get('GROQ_API_KEY')
 
 client = Groq()
@@ -47,7 +47,7 @@ def dbs_prediction():
     q = float(request.form.get("q"))
     model = joblib.load("DBS_SGD_model.pkl")
     r = model.predict([[q]])
-    return(render_template("dbs_prediction.html",r=r))
+    return(render_template("dbs_prediction.html",r=r[0][0]))
 
 @app.route("/chatbot",methods=["GET","POST"])
 def chatbot():
