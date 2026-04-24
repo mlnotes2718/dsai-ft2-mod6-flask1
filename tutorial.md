@@ -174,18 +174,7 @@ python app.py
 
 ---
 
-## 7. Optional Improvements (Next Steps)
-
-Once comfortable, you can expand your app with:
-
-* Blueprints (modular structure)
-* Database integration (SQLite, PostgreSQL)
-* Forms (Flask-WTF)
-* APIs (return JSON)
-
----
-
-## 8. Summary
+## 7. Summary
 
 Minimum requirements:
 
