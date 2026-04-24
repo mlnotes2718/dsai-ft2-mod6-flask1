@@ -561,7 +561,7 @@ Next we add `dbs.html`
 </body>
 ```
 
-Then we add the `@app.route`
+Then we add the `@app.route` for `/dbs_prediction`
 
 ```python
 @app.route("/dbs_prediction",methods=["GET","POST"])
