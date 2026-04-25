@@ -138,7 +138,7 @@ gunicorn
 groq
 dotenv
 
-# Machine learning realted
+# Machine learning related
 scikit-learn
 joblib
 
@@ -479,7 +479,7 @@ if os.path.exists('.env'):
    load_dotenv()
 ```
 
-Next, we need a html file called `llama_result.html`. Please create a file and paste the follwoing:
+Next, we need a html file called `llama_result.html`. Please create a file and paste the following:
 ```html
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -495,7 +495,7 @@ Next, we need a html file called `llama_result.html`. Please create a file and p
 </body>
 ```
 
-### Firnal Setup for This Section
+### Final Setup for This Section
 The final `app.py` should be 
 ```python
 # app.py - flask app
