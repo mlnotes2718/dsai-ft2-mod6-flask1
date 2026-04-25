@@ -24,7 +24,7 @@ def index():
 @app.route("/main",methods=["GET","POST"])
 def main():
     name = request.form.get("q")
-    return(render_template("main.html", name=name))
+    return(render_template("main.html"))
 
 @app.route("/chatbot",methods=["GET","POST"])
 def chatbot():

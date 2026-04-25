@@ -296,7 +296,7 @@ Then add the following to the `app.py`
 @app.route("/main",methods=["GET","POST"])
 def main():
     name = request.form.get("q")
-    return(render_template("main.html", name=name))
+    return(render_template("main.html"))
 ```
 
 Since we need to render the `main.html` please create a new file in `templates`
@@ -307,7 +307,7 @@ Since we need to render the `main.html` please create a new file in `templates`
 </head>
 <body>
     <div class="container">
-    <h2>Main Menu for {{name}} </h2>
+    <h2>Main Menu</h2>
     
     </div>
 </body>
@@ -319,7 +319,7 @@ Also add `request` to the import so that it will be
 from flask import Flask, render_template, request
 ```
 
-### Setup as of Now
+### Final Setup for This Section
 
 `app.py`
 ```python
@@ -336,7 +336,7 @@ def index():
 @app.route("/main",methods=["GET","POST"])
 def main():
     name = request.form.get("q")
-    return(render_template("main.html", name=name))
+    return(render_template("main.html"))
 
 if __name__ == "__main__":
     app.run()
@@ -369,7 +369,7 @@ if __name__ == "__main__":
 </head>
 <body>
     <div class="container">
-    <h2>Main Menu for {{name}} </h2>
+    <h2>Main Menu</h2>
     
     </div>
 </body>
@@ -520,7 +520,7 @@ def index():
 @app.route("/main",methods=["GET","POST"])
 def main():
     name = request.form.get("q")
-    return(render_template("main.html", name=name))
+    return(render_template("main.html"))
 
 @app.route("/chatbot",methods=["GET","POST"])
 def chatbot():
@@ -553,7 +553,7 @@ if __name__ == "__main__":
 </head>
 <body>
     <div class="container">
-    <h2>Main Menu for {{name}} </h2>
+    <h2>Main Menu</h2>
     
         <form action="/chatbot" method="post">
             <input type = "submit" value="Chatbot">
